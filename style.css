@@ -1,0 +1,78 @@
+*{box-sizing: border-box;}
+
+body{
+    background-image: url(hatterek/hatter3.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2f 1fr;
+    grid-template-areas:
+    'header header'
+    "nav nav"
+    'article aside'
+    'footer footer'
+}
+header{
+    grid-area: header;
+    text-align: right;
+    font-weight: bold;
+}
+header h1{
+    font-size: 10px;
+}
+nav{
+    grid-area: nav;
+    background-color: red;
+    text-align: initial;
+}
+nav ul li{
+    margin: 0px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: brown;
+}
+article{
+    grid-area: article;
+}
+article h3{
+    text-align: right;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+article img{
+    width: 200px;
+    float: right;
+    height: 100%;
+
+}
+aside{
+    grid-area: aside;
+    margin: 15px;
+    text-align: justify;
+}
+aside img{
+    float: right;
+    width: 200px;
+    border: 2px;
+    margin-left: 12px;
+    border-radius: 4px;
+    border-spacing: 15px;
+    border-collapse: initial;
+
+}
+footer{
+    grid-area: footer;
+    background-color: aquamarine;
+}
+@media screen and (width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
